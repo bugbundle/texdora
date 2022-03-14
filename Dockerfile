@@ -2,7 +2,7 @@ FROM quay.io/fedora/fedora
 
 ENV PYTHONUNBUFFERED=1
 RUN useradd -m texdora
-RUN dnf install -y texlive-full python3 && fmtutil -sys --all
+RUN dnf install -y texlive python3 && fmtutil -sys --all
 
 WORKDIR /home/texdora
 USER texdora
