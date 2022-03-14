@@ -2,7 +2,7 @@ FROM quay.io/fedora/fedora
 
 ENV PYTHONUNBUFFERED=1
 RUN useradd -m texdora
-RUN dnf install -y texlive texlive-plex-otf python3 && fmtutil -sys --all
+RUN dnf install -y texlive texlive-plex-otf ibm-plex-mono-fonts ibm-plex-sans-fonts ibm-plex-serif-fonts python3 && fmtutil -sys --all
 
 WORKDIR /home/texdora
 USER texdora
