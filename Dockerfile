@@ -9,6 +9,7 @@ RUN dnf install -y \
         texlive-glossaries-french \
         texlive-hyphen-french \
         texlive-minted \
+        texlive-selnolig \
         texlive-colorprofiles \
         texlive-xmpincl \
         texlive-pdfx \
