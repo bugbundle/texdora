@@ -32,8 +32,14 @@ docker-build:
         echo "Running on branch '$CI_COMMIT_BRANCH': tag = $tag"
       fi
     - docker build --pull -t "$CI_REGISTRY_IMAGE${tag}" .
+    - docker save -o "$CI_PROJECT_PATH_SLUG.tar" "$CI_REGISTRY_IMAGE${tag}"
     - docker push "$CI_REGISTRY_IMAGE${tag}"
   # Run this job in a branch where a Dockerfile exists
+  artifacts:
+    untracked: false
+    expire_in: 10 days
+    paths:
+      - "$CI_PROJECT_PATH_SLUG.tar"
   rules:
     - if: $CI_COMMIT_BRANCH
       exists:
