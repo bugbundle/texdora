@@ -1,4 +1,4 @@
-FROM quay.io/fedora/fedora@sha256:1fcb4b8b5d3fcdba78119734db03328fb3b8463bbcc83e1dda3e4ffb0ffe3b34
+FROM quay.io/fedora/fedora@sha256:633c6b70becd9a880ecd91b14f02a22151e6f3fc5c1d88f93269472696c7e4da
 
 ENV PYTHONUNBUFFERED=1
 RUN useradd -m texdora
