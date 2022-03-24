@@ -5,6 +5,7 @@ RUN useradd -m texdora
 RUN dnf install -y \
         make-4.3 \
         texlive-2021 \
+        texlive-luatex85 \
         texlive-plex-otf-svn47562 \
         texlive-babel-french-svn56607 \
         texlive-glossaries-french-svn42873 \
