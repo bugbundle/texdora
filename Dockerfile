@@ -20,6 +20,7 @@ RUN dnf install -y \
         texlive-multirow \
         texlive-tcolorbox \
         texlive-titlesec \
+        texlive-datetime \
         texlive-fontawesome \
         fontawesome-fonts \
         ibm-plex-mono-fonts \
