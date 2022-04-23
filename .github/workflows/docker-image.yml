@@ -18,4 +18,4 @@ jobs:
       uses: docker/build-push-action@ac9327eae2b366085ac7f6a2d02df8aa8ead720a
       with:
         push: true
-        tags: ghcr.io/${{ env.GITHUB_REPOSITORY }}:latest
+        tags: ghcr.io/${{ github.repository }}:latest
