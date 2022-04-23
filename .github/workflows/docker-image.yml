@@ -14,5 +14,5 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag texdora:$(date +%s)
+    - name: Build and push Docker images
+      uses: docker/build-push-action@ac9327eae2b366085ac7f6a2d02df8aa8ead720a
