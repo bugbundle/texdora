@@ -1,0 +1,26 @@
+name: scan with KICS and upload SARIF
+
+on:
+  push:
+    branches: [main]
+    paths: [Dockerfile]
+  pull_request:
+    branches: [main]
+    paths: [Dockerfile]
+
+jobs:
+  kics-job:
+    runs-on: ubuntu-latest
+    name: kics-action
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run KICS Scan with SARIF result
+        uses: checkmarx/kics-github-action@v1.6.3
+        with:
+          path: 'Dockerfile'
+          platform_type: docker
+          output_formats: 'sarif'
+      - name: Upload SARIF file
+        uses: github/codeql-action/upload-sarif@v1
+        with:
+          sarif_file: results.sarif
