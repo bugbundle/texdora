@@ -1,0 +1,9 @@
+name: Texdora
+description: Build your LaTeX documents with texlive.
+
+runs:
+  using: 'docker'
+  image: 'docker://ghcr.io/benjaminboboul/texdora:main'
+  entrypoint: /usr/bin/make
+  args:
+    - 'document.pdf'
