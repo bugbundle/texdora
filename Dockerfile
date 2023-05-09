@@ -1,4 +1,4 @@
-FROM quay.io/fedora/fedora:39
+FROM quay.io/fedora/fedora:38
 
 ENV PYTHONUNBUFFERED=1
 RUN useradd -m texdora
