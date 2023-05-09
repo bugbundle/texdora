@@ -1,5 +1,21 @@
 # Changelog
 
+## [2.0.0](https://github.com/benjaminBoboul/texdora/compare/v1.0.1...v2.0.0) (2023-05-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove unused pandoc dependency ([#9](https://github.com/benjaminBoboul/texdora/issues/9))
+
+### Features
+
+* remove unused pandoc dependency ([#9](https://github.com/benjaminBoboul/texdora/issues/9)) ([39f562f](https://github.com/benjaminBoboul/texdora/commit/39f562f7bcfd04d8765b97b32f057611de854476))
+
+
+### Bug Fixes
+
+* pin pip install versions ([39f562f](https://github.com/benjaminBoboul/texdora/commit/39f562f7bcfd04d8765b97b32f057611de854476))
+
 ## [1.0.1](https://github.com/benjaminBoboul/texdora/compare/v1.0.0...v1.0.1) (2023-05-09)
 
 
