@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/benjaminBoboul/texdora/compare/v1.0.0...v1.0.1) (2023-05-09)
+
+
+### Bug Fixes
+
+* update build triggering conditions ([ccffdd2](https://github.com/benjaminBoboul/texdora/commit/ccffdd2b6e948ded4a290f495cc18a6a264adb38))
+
 ## 1.0.0 (2023-05-09)
 
 
