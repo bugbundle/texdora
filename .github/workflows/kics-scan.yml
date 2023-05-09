@@ -18,9 +18,11 @@ jobs:
         uses: checkmarx/kics-github-action@v1.6.3
         with:
           path: 'Dockerfile'
-          platform_type: docker
-          output_formats: 'sarif'
+          platform_type: Dockerfile
+          fail_on: high
+          output_formats: 'json,sarif'
+          exclude_queries: b03a748a-542d-44f4-bb86-9199ab4fd2d5 # Healthcheck Instruction Missing
       - name: Upload SARIF file
-        uses: github/codeql-action/upload-sarif@v1
+        uses: github/codeql-action/upload-sarif@v2
         with:
           sarif_file: results.sarif

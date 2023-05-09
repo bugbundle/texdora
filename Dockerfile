@@ -1,7 +1,6 @@
 FROM quay.io/fedora/fedora:38
 
 ENV PYTHONUNBUFFERED=1
-RUN useradd -m texdora
 RUN dnf install -y \
         make \
         texlive-2022 \
@@ -27,14 +26,14 @@ RUN dnf install -y \
         ibm-plex-sans-fonts \
         ibm-plex-serif-fonts \
         python3 \
-        pandoc \
         && fmtutil -sys --all \
         && ln -sf python3 /usr/bin/python \
-        && dnf clean all
+        && dnf clean all \
+        && useradd -m texdora 
 
 WORKDIR /home/texdora
 USER texdora
 
 RUN python3 -m ensurepip
-RUN python3 -m pip install pip --upgrade
-RUN python3 -m pip install Pygments
+RUN python3 -m pip install --upgrade --no-cache-dir 'pip==23.1.2'
+RUN python3 -m pip install --no-cache-dir 'Pygments==2.15.1'
