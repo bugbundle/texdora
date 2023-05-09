@@ -3,7 +3,7 @@ description: Build your LaTeX documents with texlive.
 
 runs:
   using: 'docker'
-  image: 'docker://ghcr.io/benjaminboboul/texdora:main'
+  image: 'docker://ghcr.io/benjaminboboul/texdora:1.0.0' # x-release-please-version
   entrypoint: /usr/bin/make
   args:
     - 'document.pdf'
