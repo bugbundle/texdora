@@ -30,7 +30,7 @@ jobs:
         uses: docker/login-action@v2.1.0
         if: ${{ steps.release.outputs.release_created }}
         with:
-          registry: ${{ env.REGISTRY }}
+          registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
   
@@ -39,7 +39,7 @@ jobs:
         uses: docker/metadata-action@v4.4.0
         if: ${{ steps.release.outputs.release_created }}
         with:
-          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          images: ghcr.io/benjaminBoboul/texdora
   
       - name: Build and push Docker images
         uses: docker/build-push-action@v4.0.0
