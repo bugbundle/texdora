@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.2](https://github.com/benjaminBoboul/texdora/compare/v2.0.1...v2.0.2) (2023-05-13)
+
+
+### Bug Fixes
+
+* update release build ([f17268f](https://github.com/benjaminBoboul/texdora/commit/f17268f2dd1e4d9f5ea48a9c27ce14ae4eaffacc))
+
 ## [2.0.1](https://github.com/benjaminBoboul/texdora/compare/v2.0.0...v2.0.1) (2023-05-13)
 
 
