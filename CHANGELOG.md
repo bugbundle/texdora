@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/benjaminBoboul/texdora/compare/v2.0.0...v2.0.1) (2023-05-13)
+
+
+### Bug Fixes
+
+* merge multiples run layers and pin image sha ([a8bea06](https://github.com/benjaminBoboul/texdora/commit/a8bea06c447749d0337b4c89ad42b99f3ae4d294))
+
 ## [2.0.0](https://github.com/benjaminBoboul/texdora/compare/v1.0.1...v2.0.0) (2023-05-09)
 
 
