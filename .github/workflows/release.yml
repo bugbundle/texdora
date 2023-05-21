@@ -11,10 +11,11 @@ permissions:
 name: release-please
 
 jobs:
-  release-please:
+  release:
     runs-on: ubuntu-latest
     outputs:
-      release: ${{ steps.release.outputs }}
+      created: ${{ steps.release.outputs.release_created }}
+      tag: ${{ steps.release.outputs.tag_name }}
     steps:
       - uses: google-github-actions/release-please-action@v3
         id: release
@@ -25,13 +26,13 @@ jobs:
             action.yml
 
   build-image:
-    needs: [release-please]
+    needs: [release]
     runs-on: ubuntu-latest
-    if: ${{ needs.release-please.outputs.release.outputs.release_created }}
+    if: ${{ needs.release.outputs.created }}
     steps:
       - uses: actions/checkout@v3
         with:
-          ref: ${{ needs.release-please.outputs.release.outputs.tag_name }}
+          ref: ${{ needs.release.outputs.tag }}
 
       - name: Log in to the Container registry
         uses: docker/login-action@v2.1.0
