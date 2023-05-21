@@ -1,6 +1,5 @@
 FROM quay.io/fedora/fedora@sha256:b14af4b4e7abb04e3dd4d7194d9415cedc6f587b6e446581d4ec110f94f9a75f
 
-ENV PYTHONUNBUFFERED=1
 RUN dnf install -y \
         make \
         texlive-2022 \
