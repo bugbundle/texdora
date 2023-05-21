@@ -13,6 +13,8 @@ name: release-please
 jobs:
   release-please:
     runs-on: ubuntu-latest
+    outputs:
+      release: ${{ steps.release.outputs }}
     steps:
       - uses: google-github-actions/release-please-action@v3
         id: release
@@ -22,14 +24,17 @@ jobs:
           extra-files: |
             action.yml
 
+  build-image:
+    needs: [release-please]
+    runs-on: ubuntu-latest
+    if: ${{ needs.release-please.outputs.release.outputs.release_created }}
+    steps:
       - uses: actions/checkout@v3
-        if: ${{ steps.release.outputs.release_created }}
         with:
-          ref: ${{ steps.release.outputs.tag_name }}
+          ref: ${{ needs.release-please.outputs.release.outputs.tag_name }}
 
       - name: Log in to the Container registry
         uses: docker/login-action@v2.1.0
-        if: ${{ steps.release.outputs.release_created }}
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
@@ -38,13 +43,12 @@ jobs:
       - name: Extract metadata (tags, labels) for Docker
         id: meta
         uses: docker/metadata-action@v4.4.0
-        if: ${{ steps.release.outputs.release_created }}
         with:
-          images: ghcr.io/benjaminBoboul/texdora
+          context: git
+          images: ghcr.io/${{ github.repository }}
   
       - name: Build and push Docker images
         uses: docker/build-push-action@v4.0.0
-        if: ${{ steps.release.outputs.release_created }}
         with:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
