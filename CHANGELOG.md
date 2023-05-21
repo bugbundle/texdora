@@ -1,5 +1,24 @@
 # Changelog
 
+## [2.1.1](https://github.com/benjaminBoboul/texdora/compare/v2.1.0...v2.1.1) (2023-05-21)
+
+
+### Features
+
+* remove unused environment variable ([e21d61f](https://github.com/benjaminBoboul/texdora/commit/e21d61f159e55391270c973e049179565036c652))
+
+
+### Bug Fixes
+
+* **ci:** Update input output from workflow ([ab3696e](https://github.com/benjaminBoboul/texdora/commit/ab3696eeee74fe6e1032898d33f3c1efab47fc06))
+* **release:** use git context to fetch tag ([c6a67da](https://github.com/benjaminBoboul/texdora/commit/c6a67da5c116f05b663465b157039fe60d886cb3))
+
+
+### Miscellaneous Chores
+
+* release 2.1.0 ([1d2e8d8](https://github.com/benjaminBoboul/texdora/commit/1d2e8d8e4aa7947f1fd2823d9dc9977246ad05d2))
+* release 2.1.1 ([0ba96c3](https://github.com/benjaminBoboul/texdora/commit/0ba96c34d1472805b1c5be1fff56e012c26b37b6))
+
 ## [2.1.0](https://github.com/benjaminBoboul/texdora/compare/v2.1.0...v2.1.0) (2023-05-21)
 
 
