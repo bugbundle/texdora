@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.2](https://github.com/benjaminBoboul/texdora/compare/v2.1.1...v2.1.2) (2023-05-21)
+
+
+### Bug Fixes
+
+* **ci:** pull by tag ([6efbad2](https://github.com/benjaminBoboul/texdora/commit/6efbad21673b7c6cb789d343a24e1cd36632ae6d))
+
 ## [2.1.1](https://github.com/benjaminBoboul/texdora/compare/v2.1.0...v2.1.1) (2023-05-21)
 
 
