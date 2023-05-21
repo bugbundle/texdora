@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/benjaminBoboul/texdora/compare/v2.1.0...v2.1.0) (2023-05-21)
+
+
+### Miscellaneous Chores
+
+* release 2.1.0 ([1d2e8d8](https://github.com/benjaminBoboul/texdora/commit/1d2e8d8e4aa7947f1fd2823d9dc9977246ad05d2))
+
 ## [2.1.0](https://github.com/benjaminBoboul/texdora/compare/v2.0.2...v2.1.0) (2023-05-21)
 
 
