@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.1.0](https://github.com/benjaminBoboul/texdora/compare/v2.0.2...v2.1.0) (2023-05-21)
+
+
+### Features
+
+* add support for target input ([6ad83ba](https://github.com/benjaminBoboul/texdora/commit/6ad83bab75513d8e5a380323bbbdea80f2478c5d))
+
+
+### Bug Fixes
+
+* **ci:** allow token to write packages ([ce29341](https://github.com/benjaminBoboul/texdora/commit/ce29341a2cacbec32f55f1a9f6ac9c269d201591))
+
 ## [2.0.2](https://github.com/benjaminBoboul/texdora/compare/v2.0.1...v2.0.2) (2023-05-13)
 
 
