@@ -1,9 +1,21 @@
 name: Texdora
 description: Build your LaTeX documents with texlive.
 
+branding:
+  icon: 'book-open'
+  color: 'white'
+
+inputs:
+  target:
+    description: >
+      Makefile target used to generate your LaTeX documents
+    required: false
+    type: string
+    default: 'target.pdf'
+
 runs:
   using: 'docker'
   image: 'docker://ghcr.io/benjaminboboul/texdora:2.0.2' # x-release-please-version
   entrypoint: /usr/bin/make
   args:
-    - 'document.pdf'
+    - "${{ inputs.target }}"

@@ -1,22 +1,21 @@
 # TeXdora
 
 Fedora docker image with `texlive` & `pandoc` installed.
+Available as a GitHub Action too !
 
 ## Getting started
 
-Use this image to build your LaTeX document easily. Here is an example of gitlab-ci pipeline using our image.
+Use this image to build your LaTeX document easily. Here is an example of integration as a github action.
 
+<!-- x-release-please-start-version -->
 ```yaml
-image: registry.gitlab.com/benjaminboboul/texdora:latest
-compile: 
-  script:
-  - lualatex --shell-escape document.tex
-  - lualatex --shell-escape document.tex
-  artifacts:
-    paths:
-    - $SUBJECT/document.pdf
-    - $SUBJECT/document.log
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: benjaminboboul/texdora@v2.0.2
 ```
+<!-- x-release-please-end -->
 
 ## Project status
 
