@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       created: ${{ steps.release.outputs.release_created }}
-      tag: ${{ steps.release.outputs.tag_name }}
+      sha: ${{ steps.release.outputs.sha }}
     steps:
       - uses: google-github-actions/release-please-action@v3
         id: release
@@ -32,7 +32,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          ref: ${{ needs.release.outputs.tag }}
+          ref: ${{ needs.release.outputs.sha }}
+
+      - run: git log -1 --oneline --tags
 
       - name: Log in to the Container registry
         uses: docker/login-action@v2.1.0
