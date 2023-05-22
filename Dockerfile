@@ -23,7 +23,7 @@ RUN dnf install -y \
         texlive-roboto \
         texlive-sourcesanspro \
         texlive-sourceserifpro \
-        textlive-sourcecodepro \
+        texlive-sourcecodepro \
         fontawesome-fonts \
         python3 \
         && fmtutil -sys --all \
