@@ -20,6 +20,8 @@ RUN dnf install -y \
         texlive-titlesec \
         texlive-datetime \
         texlive-fontawesome \
+        texlive-roboto \
+        texlive-sourcesanspro \
         fontawesome-fonts \
         ibm-plex-mono-fonts \
         ibm-plex-sans-fonts \
