@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.1](https://github.com/benjaminBoboul/texdora/compare/v3.0.0...v3.0.1) (2023-05-22)
+
+
+### Bug Fixes
+
+* typo in docker image ([b0c72d7](https://github.com/benjaminBoboul/texdora/commit/b0c72d70d8f18e6739623ab39afe795df7561b54))
+
 ## [3.0.0](https://github.com/benjaminBoboul/texdora/compare/v2.2.0...v3.0.0) (2023-05-22)
 
 
