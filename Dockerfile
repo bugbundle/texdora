@@ -22,10 +22,9 @@ RUN dnf install -y \
         texlive-fontawesome \
         texlive-roboto \
         texlive-sourcesanspro \
+        texlive-sourceserifpro \
+        textlive-sourcecodepro \
         fontawesome-fonts \
-        ibm-plex-mono-fonts \
-        ibm-plex-sans-fonts \
-        ibm-plex-serif-fonts \
         python3 \
         && fmtutil -sys --all \
         && ln -sf python3 /usr/bin/python \

@@ -49,7 +49,7 @@ jobs:
             action.yml
 
   promote:
-    needs: [release]
+    needs: [release, build]
     runs-on: ubuntu-22.04
     if: ${{ needs.release.outputs.created }}
     steps:
@@ -58,4 +58,6 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-      - run: skopeo copy docker://ghcr.io/${{ github.repository }}:main docker://ghcr.io/${{ github.repository }}:${{ needs.release.outputs.tag }}
+      - run: skopeo copy docker://ghcr.io/${REPOSITORY@L}:main docker://ghcr.io/${REPOSITORY@L}:${{ needs.release.outputs.tag }}
+        env:
+          REPOSITORY: ${{ github.repository }}
