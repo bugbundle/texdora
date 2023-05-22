@@ -1,5 +1,21 @@
 # Changelog
 
+## [3.0.0](https://github.com/benjaminBoboul/texdora/compare/v2.2.0...v3.0.0) (2023-05-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* replace IBM Plex fonts by source serif pro & source code pro
+
+### Features
+
+* replace IBM Plex fonts by source serif pro & source code pro ([a36db4f](https://github.com/benjaminBoboul/texdora/commit/a36db4fd13ba6fa13ce7cbdf03cdcfe22d7be912))
+
+
+### Bug Fixes
+
+* typo in Dockerfile ([ae70422](https://github.com/benjaminBoboul/texdora/commit/ae7042251386c68cc333e479976ce743323ac1a2))
+
 ## [2.2.0](https://github.com/benjaminBoboul/texdora/compare/v2.1.2...v2.2.0) (2023-05-22)
 
 
