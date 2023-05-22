@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/benjaminBoboul/texdora/compare/v2.1.2...v2.2.0) (2023-05-22)
+
+
+### Features
+
+* add roboto and source sans pro fonts by default ([ec658e3](https://github.com/benjaminBoboul/texdora/commit/ec658e3eabb01ff0ebf1c705f566ab8d13b22d08))
+
 ## [2.1.2](https://github.com/benjaminBoboul/texdora/compare/v2.1.1...v2.1.2) (2023-05-21)
 
 
