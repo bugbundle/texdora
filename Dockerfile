@@ -26,11 +26,8 @@ RUN dnf install -y \
         texlive-sourcecodepro \
         fontawesome-fonts \
         python3 \
+        python3-pygments \
         && fmtutil -sys --all \
         && ln -sf python3 /usr/bin/python \
         && dnf clean all \
         && useradd -m texdora 
-
-RUN python3 -m ensurepip \
-    && python3 -m pip install --upgrade --no-cache-dir 'pip==23.1.2' \
-    && python3 -m pip install --no-cache-dir 'Pygments==2.15.1'
