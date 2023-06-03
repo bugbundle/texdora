@@ -31,9 +31,6 @@ RUN dnf install -y \
         && dnf clean all \
         && useradd -m texdora 
 
-WORKDIR /home/texdora
-USER texdora
-
 RUN python3 -m ensurepip \
     && python3 -m pip install --upgrade --no-cache-dir 'pip==23.1.2' \
     && python3 -m pip install --no-cache-dir 'Pygments==2.15.1'
