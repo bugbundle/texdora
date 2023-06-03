@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.1.0](https://github.com/benjaminBoboul/texdora/compare/v3.0.1...v3.1.0) (2023-06-03)
+
+
+### Features
+
+* install minted with dnf instead of pip ([bfc0fcf](https://github.com/benjaminBoboul/texdora/commit/bfc0fcf8bb9453850bc2f676c41c77e2c90d090a))
+* remove non root user for CI use case ([de141d2](https://github.com/benjaminBoboul/texdora/commit/de141d2343c69d72b535e50596f4521853199a13))
+
 ## [3.0.1](https://github.com/benjaminBoboul/texdora/compare/v3.0.0...v3.0.1) (2023-05-22)
 
 
