@@ -20,6 +20,7 @@ RUN dnf install -y \
         texlive-titlesec \
         texlive-datetime \
         texlive-fontawesome \
+        texlive-fontawesome5 \
         texlive-roboto \
         texlive-sourcesanspro \
         texlive-sourceserifpro \
