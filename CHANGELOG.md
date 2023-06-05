@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.2.0](https://github.com/benjaminBoboul/texdora/compare/v3.1.0...v3.2.0) (2023-06-05)
+
+
+### Features
+
+* add fontawesome5 package ([07f5b73](https://github.com/benjaminBoboul/texdora/commit/07f5b730e9ddcdb1a5aef719e23b2c69ce1734c9))
+
 ## [3.1.0](https://github.com/benjaminBoboul/texdora/compare/v3.0.1...v3.1.0) (2023-06-03)
 
 
