@@ -29,6 +29,7 @@ RUN dnf install -y \
         texlive-biblatex \
         texlive-pgfplots \
         texlive-thmtools \
+        texlive-todonotes \
         fontawesome-fonts \
         python3 \
         python3-pygments \
