@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.2.1](https://github.com/import-benjamin/texdora/compare/v3.2.0...v3.2.1) (2023-10-29)
+
+
+### Bug Fixes
+
+* update docker image name ([44e054c](https://github.com/import-benjamin/texdora/commit/44e054c12ffa14cf868b81a01ab101b5eacdc506))
+
 ## [3.2.0](https://github.com/benjaminBoboul/texdora/compare/v3.1.0...v3.2.0) (2023-06-05)
 
 
