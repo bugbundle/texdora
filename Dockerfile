@@ -7,6 +7,7 @@ RUN dnf install -y \
         texlive-plex-otf \
         texlive-babel-french \
         texlive-glossaries-french \
+        texlive-glossaries-extra \
         texlive-hyphen-french \
         texlive-minted \
         texlive-selnolig \
@@ -25,6 +26,8 @@ RUN dnf install -y \
         texlive-sourcesanspro \
         texlive-sourceserifpro \
         texlive-sourcecodepro \
+        texlive-biblatex \
+        texlive-biber \
         fontawesome-fonts \
         python3 \
         python3-pygments \
