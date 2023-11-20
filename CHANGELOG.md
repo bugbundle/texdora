@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.3.0](https://github.com/import-benjamin/texdora/compare/v3.2.1...v3.3.0) (2023-11-20)
+
+
+### Features
+
+* add user ([25f2ef1](https://github.com/import-benjamin/texdora/commit/25f2ef13b9e8fff1043000223111ae2380d34ae5))
+
 ## [3.2.1](https://github.com/import-benjamin/texdora/compare/v3.2.0...v3.2.1) (2023-10-29)
 
 
