@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.3.1](https://github.com/import-benjamin/texdora/compare/v3.3.0...v3.3.1) (2023-11-20)
+
+
+### Bug Fixes
+
+* remove the texdora user ([7a7d42c](https://github.com/import-benjamin/texdora/commit/7a7d42cdb51fc1c23281edfca3c3d9437b776456))
+
 ## [3.3.0](https://github.com/import-benjamin/texdora/compare/v3.2.1...v3.3.0) (2023-11-20)
 
 
