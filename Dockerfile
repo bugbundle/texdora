@@ -31,4 +31,6 @@ RUN dnf install -y \
         && fmtutil -sys --all \
         && ln -sf python3 /usr/bin/python \
         && dnf clean all \
-        && useradd -m texdora 
+        && useradd -m texdora
+
+USER texdora
