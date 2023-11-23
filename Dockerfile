@@ -30,6 +30,7 @@ RUN dnf install -y \
         texlive-pgfplots \
         texlive-thmtools \
         texlive-todonotes \
+        texlive-siunitx \
         fontawesome-fonts \
         python3 \
         python3-pygments \
