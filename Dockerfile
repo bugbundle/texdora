@@ -2,7 +2,7 @@ FROM quay.io/fedora/fedora:39@sha256:626f4480c997fb048a7e89a57ff6b270a70c6dc474e
 
 RUN dnf install -y \
         make \
-        texlive-2022 \
+        texlive-2023 \
         texlive-luatex85 \
         texlive-plex-otf \
         texlive-babel-french \
