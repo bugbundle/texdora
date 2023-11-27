@@ -40,4 +40,4 @@ RUN dnf install -y \
 
 RUN fmtutil -sys --all \
     && ln -sf python3 /usr/bin/python \
-    && pip install --no-cache-dir Pygments
+    && pip install --user --no-cache-dir Pygments
