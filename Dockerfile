@@ -1,6 +1,7 @@
 FROM quay.io/fedora/fedora:39@sha256:626f4480c997fb048a7e89a57ff6b270a70c6dc474e7755ec5be6b4815904ae5
 
 RUN dnf install -y \
+        which \
         make \
         texlive-2023 \
         texlive-luatex85 \
