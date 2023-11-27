@@ -1,5 +1,28 @@
 # Changelog
 
+## [3.4.0](https://github.com/import-benjamin/texdora/compare/v3.3.1...v3.4.0) (2023-11-27)
+
+
+### Features
+
+* add biber biblatex & glossaries-extra packages ([bb75a46](https://github.com/import-benjamin/texdora/commit/bb75a46fcf4bb8f58e934479c7ebf13178bd9ef4))
+* add circuitikz ([8e64036](https://github.com/import-benjamin/texdora/commit/8e640363cab650cb18bc3cac441635052df8c3c0))
+* add git package ([11bdfb3](https://github.com/import-benjamin/texdora/commit/11bdfb3af146cc06b32bca4afb983403023f2617))
+* add pgfplots ([3a2bfb2](https://github.com/import-benjamin/texdora/commit/3a2bfb241f1b5f952493745d54eb3ec18edcf7f9))
+* add siunitx ([6e168ed](https://github.com/import-benjamin/texdora/commit/6e168ed3d7c3a9cdf5256976df937a68ade034a6))
+* add subfiles ([dca37eb](https://github.com/import-benjamin/texdora/commit/dca37eb769d79ee617a22764ef15efafdc848690))
+* add thmtools ([d2efe48](https://github.com/import-benjamin/texdora/commit/d2efe487ce08526f9df22d5b902a744f71825669))
+* add todonotes ([2a777f5](https://github.com/import-benjamin/texdora/commit/2a777f5109d97460589237dd8fcf5e90c6669c30))
+* add which command ([f76c9ff](https://github.com/import-benjamin/texdora/commit/f76c9ff9f28078edbb92ee1b475ba404e9e39041))
+* upgrade texlive ([14c85e5](https://github.com/import-benjamin/texdora/commit/14c85e5e2a559c0cd9064316b47fd6a71fa63538))
+
+
+### Bug Fixes
+
+* install pip package as user ([b510e96](https://github.com/import-benjamin/texdora/commit/b510e96efdcacfd0d3ade79efdd1f7fc153b3353))
+* remove invalid biber package ([d5829d4](https://github.com/import-benjamin/texdora/commit/d5829d48295dcde8fa8cb7d30cb900ed153c1ae7))
+* typo ([92b37e8](https://github.com/import-benjamin/texdora/commit/92b37e84a907c26b4e215c2efb8db390c966e090))
+
 ## [3.3.1](https://github.com/import-benjamin/texdora/compare/v3.3.0...v3.3.1) (2023-11-20)
 
 
