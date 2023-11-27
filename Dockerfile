@@ -32,6 +32,7 @@ RUN dnf install -y \
         texlive-todonotes \
         texlive-siunitx \
         texlive-subfiles \
+        texlive-circuitikz \
         fontawesome-fonts \
         python3 \
         python3-pygments \
