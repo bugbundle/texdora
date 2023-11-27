@@ -35,7 +35,9 @@ RUN dnf install -y \
         texlive-circuitikz \
         fontawesome-fonts \
         python3 \
-        python3-pygments \
-        && fmtutil -sys --all \
-        && ln -sf python3 /usr/bin/python \
+        python3-pip \
         && dnf clean all
+
+RUN fmtutil -sys --all \
+    && ln -sf python3 /usr/bin/python \
+    && pip install --no-cache-dir Pygments
