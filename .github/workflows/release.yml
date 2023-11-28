@@ -47,6 +47,7 @@ jobs:
           package-name: texdora
           extra-files: |
             action.yml
+            README.md
 
   promote:
     needs: [release, build]

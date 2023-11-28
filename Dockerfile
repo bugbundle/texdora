@@ -35,6 +35,7 @@ RUN dnf install -y \
         texlive-siunitx \
         texlive-subfiles \
         texlive-circuitikz \
+        texlive-pgf \
         fontawesome-fonts \
         python3 \
         python3-pip \
