@@ -23,6 +23,6 @@ jobs:
           output_formats: 'json,sarif'
           exclude_queries: b03a748a-542d-44f4-bb86-9199ab4fd2d5 # Healthcheck Instruction Missing
       - name: Upload SARIF file
-        uses: github/codeql-action/upload-sarif@v2
+        uses: github/codeql-action/upload-sarif@v3
         with:
           sarif_file: results.sarif
