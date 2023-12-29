@@ -15,6 +15,25 @@ jobs:
     steps:
       - uses: benjaminboboul/texdora@v2.0.2
 ```
+
+An alternative would be to use it directly as a docker image:
+
+```yaml
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: docker://ghcr.io/import-benjamin/texdora:main
+    steps:
+    - uses: actions/checkout@v4
+    - run: dnf install -y ibm-plex-fonts-all
+    - run: make papers.pdf
+
+    - uses: actions/upload-artifact@v3
+      with:
+        name: document
+        path: papers.pdf
+```
+
 <!-- x-release-please-end -->
 
 ## Project status
