@@ -13,7 +13,7 @@ jobs:
   compile:
     runs-on: ubuntu-latest
     steps:
-      - uses: benjaminboboul/texdora@v2.0.2
+      - uses: benjaminboboul/texdora@v3.5.0
 ```
 
 An alternative would be to use it directly as a docker image:

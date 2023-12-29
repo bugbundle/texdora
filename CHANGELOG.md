@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.5.0](https://github.com/import-benjamin/texdora/compare/v3.4.0...v3.5.0) (2023-12-27)
+
+
+### Features
+
+* add pgf ([83f7c09](https://github.com/import-benjamin/texdora/commit/83f7c099cdad38c2780204f960db1c76ca9bdd45))
+
 ## [3.4.0](https://github.com/import-benjamin/texdora/compare/v3.3.1...v3.4.0) (2023-11-27)
 
 
