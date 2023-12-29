@@ -42,12 +42,6 @@ jobs:
     steps:
       - uses: google-github-actions/release-please-action@v4
         id: release
-        with:
-          release-type: simple
-          package-name: texdora
-          extra-files: |
-            action.yml
-            README.md
 
   promote:
     needs: [release, build]

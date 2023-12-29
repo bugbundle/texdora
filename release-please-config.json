@@ -1,0 +1,7 @@
+{
+    "release-type": "simple",
+    "extra-files": [
+        "action.yml",
+        "README.md"
+    ]
+}
