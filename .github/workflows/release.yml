@@ -41,6 +41,6 @@ jobs:
         id: release
 
       - run: skopeo copy docker://ghcr.io/${REPOSITORY@L}:main docker://ghcr.io/${REPOSITORY@L}:${{ steps.release.outputs.tag_name }}
-        if: ${{ steps.release.outputs.releases_created }}
+        if: ${{ steps.release.outputs.release_created }}
         env:
           REPOSITORY: ${{ github.repository }}
