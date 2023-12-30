@@ -1,5 +1,17 @@
 # Changelog
 
+## [4.0.1](https://github.com/bugbundle/texdora/compare/v4.0.0...v4.0.1) (2023-12-30)
+
+
+### Features
+
+* add back cache for docker image ([cc7173c](https://github.com/bugbundle/texdora/commit/cc7173cf3800bec0ee7557014b01f94ca197ed51))
+
+
+### Bug Fixes
+
+* remove unused dot in manifest ([7408f30](https://github.com/bugbundle/texdora/commit/7408f30cff24d9302e4c0dd1c6edba2bdea957b0))
+
 ## [3.5.0](https://github.com/import-benjamin/texdora/compare/v3.4.0...v3.5.0) (2023-12-27)
 
 
