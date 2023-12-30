@@ -1,5 +1,13 @@
 # Changelog
 
+## [4.0.2](https://github.com/bugbundle/texdora/compare/v4.0.1...v4.0.2) (2023-12-30)
+
+
+### Bug Fixes
+
+* output attribute typo ([3ec5756](https://github.com/bugbundle/texdora/commit/3ec575677c570fe0019234566ce805b18fb00e0b))
+* update push image tag condition ([6211c2c](https://github.com/bugbundle/texdora/commit/6211c2ca630407d0cb83bf4406f46bf0342de904))
+
 ## [4.0.1](https://github.com/bugbundle/texdora/compare/v4.0.0...v4.0.1) (2023-12-30)
 
 
