@@ -20,7 +20,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.RELEASE_TOKEN }}
 
       - uses: docker/metadata-action@v5.4.0
         id: meta
@@ -43,6 +43,8 @@ jobs:
     steps:
       - uses: google-github-actions/release-please-action@v4
         id: release
+        with:
+          token: ${{ secrets.RELEASE_TOKEN }}
 
   promote:
     needs: [release, build]
@@ -53,7 +55,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.RELEASE_TOKEN }}
 
       - run: skopeo copy docker://ghcr.io/${REPOSITORY@L}:main docker://ghcr.io/${REPOSITORY@L}:${{ needs.release.outputs.tag }}
         env:
