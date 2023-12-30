@@ -25,7 +25,6 @@ jobs:
     container: docker://ghcr.io/bugbundle/texdora@v3.5.0
     steps:
     - uses: actions/checkout@v4
-    - run: dnf install -y ibm-plex-fonts-all
     - run: make papers.pdf
 
     - uses: actions/upload-artifact@v3
