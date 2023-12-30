@@ -1,5 +1,6 @@
 {
     "release-type": "simple",
+    "prerelease": true,
     "extra-files": [
         "action.yml",
         "README.md"
