@@ -1,8 +1,14 @@
 {
-    "release-type": "simple",
+    "commit-search-depth": 200,
     "prerelease": true,
-    "extra-files": [
-        "action.yml",
-        "README.md"
-    ]
+    "release-as": "4.0.1",
+    "packages": {
+        ".": {
+            "release-type": "simple",
+            "extra-files": [
+                "action.yml",
+                "README.md"
+            ]
+        }
+    }
 }
