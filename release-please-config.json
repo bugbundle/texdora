@@ -1,7 +1,6 @@
 {
     "commit-search-depth": 200,
     "prerelease": true,
-    "release-as": "4.0.1",
     "packages": {
         ".": {
             "release-type": "simple",

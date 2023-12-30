@@ -40,7 +40,7 @@ jobs:
       - uses: google-github-actions/release-please-action@v4
         id: release
 
-      - run: skopeo copy docker://ghcr.io/${REPOSITORY@L}:main docker://ghcr.io/${REPOSITORY@L}:${{ needs.release.outputs.tag }}
-        if: ${{ steps.release.outputs.created }}
+      - run: skopeo copy docker://ghcr.io/${REPOSITORY@L}:main docker://ghcr.io/${REPOSITORY@L}:${{ steps.release.outputs.tag_name }}
+        if: ${{ steps.release.outputs.releases_created }}
         env:
           REPOSITORY: ${{ github.repository }}
