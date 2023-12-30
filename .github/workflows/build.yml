@@ -1,0 +1,28 @@
+on:
+    pull_request:
+        branches: [main]
+  
+name: Build
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+    - uses: actions/checkout@v4
+    - uses: docker/login-action@v3.0.0
+      with:
+        registry: ghcr.io
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+
+    - uses: docker/metadata-action@v5.0.0
+      id: meta
+      with:
+        images: ghcr.io/${{ github.repository }}
+
+    - uses: docker/build-push-action@v5.1.0
+      with:
+        push: true
+        tags: ${{ steps.meta.outputs.tags }}
+        labels: ${{ steps.meta.outputs.labels }}
+    

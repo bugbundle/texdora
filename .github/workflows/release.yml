@@ -33,7 +33,6 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
-
   release:
     runs-on: ubuntu-22.04
     outputs:
@@ -53,6 +52,7 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
+
       - run: skopeo copy docker://ghcr.io/${REPOSITORY@L}:main docker://ghcr.io/${REPOSITORY@L}:${{ needs.release.outputs.tag }}
         env:
           REPOSITORY: ${{ github.repository }}

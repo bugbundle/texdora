@@ -13,7 +13,7 @@ jobs:
   compile:
     runs-on: ubuntu-latest
     steps:
-      - uses: benjaminboboul/texdora@v3.5.0
+      - uses: bugbundle/texdora@v3.5.0
 ```
 
 An alternative would be to use it directly as a docker image:
@@ -22,7 +22,7 @@ An alternative would be to use it directly as a docker image:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: docker://ghcr.io/import-benjamin/texdora:main
+    container: docker://ghcr.io/bugbundle/texdora@v3.5.0
     steps:
     - uses: actions/checkout@v4
     - run: dnf install -y ibm-plex-fonts-all
