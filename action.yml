@@ -1,4 +1,4 @@
-name: Texdora
+name: texdora-build
 description: Build your LaTeX documents with texlive.
 
 branding:
