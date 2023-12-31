@@ -1,6 +1,6 @@
 # TeXdora
 
-Fedora docker image with `texlive` & `pandoc` installed.
+Docker image with `texlive` installed.
 Available as a GitHub Action too !
 
 ## Getting started

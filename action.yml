@@ -8,14 +8,14 @@ branding:
 inputs:
   target:
     description: >
-      Makefile target used to generate your LaTeX documents
+      Makefile target used to generate your LaTeX documents (default: target.pdf) 
     required: false
     type: string
     default: 'target.pdf'
 
 runs:
   using: 'docker'
-  image: 'docker://ghcr.io/import-benjamin/texdora:v4.0.2' # x-release-please-version
+  image: 'docker://ghcr.io/bugbundle/texdora:v4.0.2' # x-release-please-version
   entrypoint: /usr/bin/make
   args:
     - "${{ inputs.target }}"
