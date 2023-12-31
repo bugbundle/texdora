@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.0.3](https://github.com/bugbundle/texdora/compare/v4.0.2...v4.0.3) (2023-12-31)
+
+
+### Bug Fixes
+
+* update action image ([38aa622](https://github.com/bugbundle/texdora/commit/38aa62239ad99e4ade1c892e8b9de00b4f589353))
+
 ## [4.0.2](https://github.com/bugbundle/texdora/compare/v4.0.1...v4.0.2) (2023-12-30)
 
 
