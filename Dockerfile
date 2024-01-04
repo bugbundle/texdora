@@ -59,7 +59,8 @@ RUN tlmgr install \
         csquotes \
         plex \
         epstopdf-pkg \
-        pdflscape
+        pdflscape \
+        enumitem
 
 RUN fmtutil -sys --all \
     && ln -sf python3 /usr/bin/python \
