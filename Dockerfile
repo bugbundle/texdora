@@ -61,7 +61,8 @@ RUN tlmgr install \
         epstopdf-pkg \
         pdflscape \
         enumitem \
-        ragged2e
+        ragged2e \
+        geometry
 
 RUN fmtutil -sys --all \
     && ln -sf python3 /usr/bin/python \
