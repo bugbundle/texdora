@@ -66,7 +66,8 @@ RUN tlmgr install \
         fancyhdr \
         xifthen \
         ifmtarg \
-        setspace
+        setspace \
+        unicode-math
 
 RUN fmtutil -sys --all \
     && ln -sf python3 /usr/bin/python \
