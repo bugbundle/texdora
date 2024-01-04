@@ -67,7 +67,8 @@ RUN tlmgr install \
         xifthen \
         ifmtarg \
         setspace \
-        unicode-math
+        unicode-math \
+        fontawesome5
 
 RUN fmtutil -sys --all \
     && ln -sf python3 /usr/bin/python \
