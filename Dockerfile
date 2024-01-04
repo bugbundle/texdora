@@ -63,7 +63,8 @@ RUN tlmgr install \
         enumitem \
         ragged2e \
         geometry \
-        fancyhdr
+        fancyhdr \
+        xifthen
 
 RUN fmtutil -sys --all \
     && ln -sf python3 /usr/bin/python \
