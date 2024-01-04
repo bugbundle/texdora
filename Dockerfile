@@ -60,7 +60,8 @@ RUN tlmgr install \
         plex \
         epstopdf-pkg \
         pdflscape \
-        enumitem
+        enumitem \
+        ragged2e
 
 RUN fmtutil -sys --all \
     && ln -sf python3 /usr/bin/python \
