@@ -62,7 +62,8 @@ RUN tlmgr install \
         pdflscape \
         enumitem \
         ragged2e \
-        geometry
+        geometry \
+        fancyhdr
 
 RUN fmtutil -sys --all \
     && ln -sf python3 /usr/bin/python \
