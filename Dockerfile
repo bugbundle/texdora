@@ -71,6 +71,7 @@ RUN tlmgr install \
         fontawesome5 \
         roboto \
         sourcesanspro
+RUN tlmgr install tcolobor
 
 RUN fmtutil -sys --all \
     && ln -sf python3 /usr/bin/python \
