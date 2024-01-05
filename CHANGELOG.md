@@ -1,5 +1,31 @@
 # Changelog
 
+## [4.1.0](https://github.com/bugbundle/texdora/compare/v4.0.3...v4.1.0) (2024-01-05)
+
+
+### Features
+
+* **tlmgr:** add bookmark package ([e5120a4](https://github.com/bugbundle/texdora/commit/e5120a4558af0da52703ad933564a6b98734ba1d))
+* **tlmgr:** add enumitem package ([1fe9c41](https://github.com/bugbundle/texdora/commit/1fe9c41acd61594a222aa9ea067c34bda5d88c45))
+* **tlmgr:** add environ package ([b950cc2](https://github.com/bugbundle/texdora/commit/b950cc2685707ac847db74bd307f7aac8dafa7d2))
+* **tlmgr:** add fancyhdr package ([ab7585e](https://github.com/bugbundle/texdora/commit/ab7585e8ae7a039c11e438536d2cf621a5385ec7))
+* **tlmgr:** add fontawesome5 package ([eae5688](https://github.com/bugbundle/texdora/commit/eae568854a5b3a93867c8413c3fcaf510c9a30e0))
+* **tlmgr:** add geometry package ([2c0f89d](https://github.com/bugbundle/texdora/commit/2c0f89d87e799ec71d6688faaa02974f6e4d3e4e))
+* **tlmgr:** add ifmtarg package ([3f95a7a](https://github.com/bugbundle/texdora/commit/3f95a7a4567de045e507d31fed07c414de768fa1))
+* **tlmgr:** add parskip package ([2ababf7](https://github.com/bugbundle/texdora/commit/2ababf72163e349a61c5ce34fe279698857fc635))
+* **tlmgr:** add ragged2e package ([88dd3a8](https://github.com/bugbundle/texdora/commit/88dd3a8405cb06ac26cd5ef7cc30ca9abaed04ca))
+* **tlmgr:** add roboto package ([2831238](https://github.com/bugbundle/texdora/commit/28312381aab7d9e5f5ea87a30efc084014aaec19))
+* **tlmgr:** add setspace package ([747a074](https://github.com/bugbundle/texdora/commit/747a07485ad86d77da9f3166d54bd0205c34a6a0))
+* **tlmgr:** add sourcesanspro package ([5e5efb4](https://github.com/bugbundle/texdora/commit/5e5efb4f159196cba638b4ea46a2548513a569c5))
+* **tlmgr:** add tcolorbox package ([475fbb7](https://github.com/bugbundle/texdora/commit/475fbb75353f5b0e0d45aa20b1d4d5f37fb8b66e))
+* **tlmgr:** add unicode-math package ([bd7b9a3](https://github.com/bugbundle/texdora/commit/bd7b9a3a2807f428587b40d4ba547f160f9323fb))
+* **tlmgr:** add xifthen package ([2e8a72a](https://github.com/bugbundle/texdora/commit/2e8a72a82a8bd4d150f22969b8ac8a89eb3f3d7c))
+
+
+### Bug Fixes
+
+* typo in package name ([e1d07d9](https://github.com/bugbundle/texdora/commit/e1d07d98bc43026a7446a327ad542f022f31709c))
+
 ## [4.0.3](https://github.com/bugbundle/texdora/compare/v4.0.2...v4.0.3) (2023-12-31)
 
 
