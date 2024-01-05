@@ -69,7 +69,8 @@ RUN tlmgr install \
         setspace \
         unicode-math \
         fontawesome5 \
-        roboto
+        roboto \
+        sourcesanspro
 
 RUN fmtutil -sys --all \
     && ln -sf python3 /usr/bin/python \
