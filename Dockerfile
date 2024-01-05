@@ -71,7 +71,7 @@ RUN tlmgr install \
         fontawesome5 \
         roboto \
         sourcesanspro
-RUN tlmgr install tcolorbox environ parskip
+RUN tlmgr install tcolorbox environ parskip bookmark
 
 RUN fmtutil -sys --all \
     && ln -sf python3 /usr/bin/python \
