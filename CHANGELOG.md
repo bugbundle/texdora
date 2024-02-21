@@ -1,5 +1,17 @@
 # Changelog
 
+## 4.1.1 (2024-02-21)
+
+## What's Changed
+* build(deps): bump ubuntu from `6042500` to `e6173d4` by @dependabot in https://github.com/bugbundle/texdora/pull/8
+* build(deps): bump docker/metadata-action from 5.4.0 to 5.5.1 by @dependabot in https://github.com/bugbundle/texdora/pull/10
+* build(deps): bump ubuntu from `e6173d4` to `e9569c2` by @dependabot in https://github.com/bugbundle/texdora/pull/9
+
+## New Contributors
+* @dependabot made their first contribution in https://github.com/bugbundle/texdora/pull/8
+
+**Full Changelog**: https://github.com/bugbundle/texdora/compare/v4.1.0...v4.1.1
+
 ## [4.1.0](https://github.com/bugbundle/texdora/compare/v4.0.3...v4.1.0) (2024-01-05)
 
 
