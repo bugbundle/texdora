@@ -15,8 +15,9 @@ RUN apt-get update -y && apt-get install -y --no-install-recommends \
 
 WORKDIR /tmp
 
-RUN wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz && \
-    zcat < install-tl-unx.tar.gz | tar xf - && \
+ADD https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz ./install-tl-unx.tar.gz
+
+RUN zcat < install-tl-unx.tar.gz | tar xf - && \
     perl ./install-tl-*/install-tl --no-interaction --scheme=minimal && \
     rm -rf ./install-tl-*
 
