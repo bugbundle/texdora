@@ -1,6 +1,6 @@
 FROM ubuntu:22.04@sha256:f9d633ff6640178c2d0525017174a688e2c1aef28f0a0130b26bd5554491f0da	
 
-ENV PATH="${PATH}:/root/.local/bin:/usr/local/texlive/2023/bin/x86_64-linux"
+ENV PATH="${PATH}:/root/.local/bin:/usr/local/texlive/2024/bin/x86_64-linux"
 
 RUN apt-get update -y && apt-get install -y --no-install-recommends \
         git=1:2.34.1-1ubuntu1.10 \
@@ -71,8 +71,11 @@ RUN tlmgr install \
         unicode-math \
         fontawesome5 \
         roboto \
-        sourcesanspro
-RUN tlmgr install tcolorbox environ parskip bookmark
+        sourcesanspro \
+        tcolorbox \
+        environ \
+        parskip \
+        bookmark
 
 RUN fmtutil -sys --all \
     && ln -sf python3 /usr/bin/python \
