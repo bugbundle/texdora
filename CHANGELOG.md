@@ -1,5 +1,16 @@
 # Changelog
 
+## 4.1.2 (2024-04-18)
+
+## What's Changed
+* build(deps): bump ubuntu from `e9569c2` to `f9d633f` by @dependabot in https://github.com/bugbundle/texdora/pull/11
+* build(deps): bump ubuntu from `f9d633f` to `77906da` by @dependabot in https://github.com/bugbundle/texdora/pull/15
+* build(deps): bump docker/build-push-action from 5.1.0 to 5.3.0 by @dependabot in https://github.com/bugbundle/texdora/pull/14
+* build(deps): bump docker/login-action from 3.0.0 to 3.1.0 by @dependabot in https://github.com/bugbundle/texdora/pull/13
+
+
+**Full Changelog**: https://github.com/bugbundle/texdora/compare/v4.1.1...v4.1.2
+
 ## 4.1.1 (2024-02-21)
 
 ## What's Changed
