@@ -15,7 +15,7 @@ inputs:
 
 runs:
   using: 'docker'
-  image: 'docker://ghcr.io/bugbundle/texdora:v4.1.1' # x-release-please-version
+  image: 'docker://ghcr.io/bugbundle/texdora:v4.1.2' # x-release-please-version
   entrypoint: /usr/bin/make
   args:
     - "${{ inputs.target }}"
