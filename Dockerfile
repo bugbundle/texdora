@@ -22,60 +22,62 @@ RUN zcat < install-tl-unx.tar.gz | tar xf - && \
     rm -rf ./install-tl-*
 
 RUN tlmgr install \
+        amscls \
+        beamer \
+        beamer-tcolorbox \
+        biblatex \
+        bookmark \
+        booktabs \
+        caption \
+        carlisle \
+        circuitikz \
         collection-langfrench \
         collection-luatex \
-        latex-bin \
-        memoir \
-        xpatch \
-        tools \
-        booktabs \
+        csquotes \
+        enumitem \
+        environ \
+        epstopdf-pkg \
+        fancyhdr \
+        fancyvrb \
+        float \
+        fontawesome5 \
+        fontspec \
+        geometry \
+        glossaries \
+        glossaries-extra \
         hyperref \
+        ifmtarg \
         infwarerr \
         kvoptions \
-        mparhack \
-        fontspec \
-        carlisle \
-        pdftexcmds \
+        latex-bin \
+        mathtools \
+        memoir \
         microtype \
-        amscls \
-        glossaries-extra \
-        xkeyval \
-        glossaries \
-        biblatex \
+        minted \
+        mparhack \
+        parskip \
+        pdflscape \
+        pdfpages \
+        pdftexcmds \
         pgf \
         pgfplots \
-        tikzfill \
-        thmtools \
-        todonotes \
-        siunitx \
-        mathtools \
-        pdfpages \
-        subfiles \
-        float \
-        caption \
-        circuitikz \
-        minted \
-        fancyvrb \
-        upquote \
-        csquotes \
         plex \
-        epstopdf-pkg \
-        pdflscape \
-        enumitem \
         ragged2e \
-        geometry \
-        fancyhdr \
-        xifthen \
-        ifmtarg \
-        setspace \
-        unicode-math \
-        fontawesome5 \
         roboto \
+        setspace \
+        siunitx \
         sourcesanspro \
+        subfiles \
         tcolorbox \
-        environ \
-        parskip \
-        bookmark
+        thmtools \
+        tikzfill \
+        todonotes \
+        tools \
+        unicode-math \
+        upquote \
+        xifthen \
+        xkeyval \
+        xpatch
 
 RUN fmtutil -sys --all \
     && ln -sf python3 /usr/bin/python \
