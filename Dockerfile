@@ -3,14 +3,14 @@ FROM ubuntu:24.04@sha256:562456a05a0dbd62a671c1854868862a4687bf979a96d48ae8e7666
 ENV PATH="${PATH}:/root/.local/bin:/usr/local/texlive/2024/bin/x86_64-linux"
 
 RUN apt-get update -y && apt-get install -y --no-install-recommends \
-        git=1:2.34.1-1ubuntu1.10 \
-        make=4.3-4.1build1 \
-        perl=5.34.0-3ubuntu1.3 \
-        fonts-font-awesome=5.0.10+really4.7.0~dfsg-4.1 \
-        fonts-ibm-plex=6.0.0-1 \
-        python3=3.10.6-1~22.04 \
-        python3-pip=22.0.2+dfsg-1ubuntu0.4 \
-        wget=1.21.2-2ubuntu1 \
+        git=1:2.43.0 \
+        make=4.3 \
+        perl=5.38.2 \
+        fonts-font-awesome \
+        fonts-ibm-plex=6.1.1 \
+        python3=3.12.3 \
+        python3-pip=24.0+dfsg \
+        wget=1.21.4 \
         && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /tmp
