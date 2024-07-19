@@ -24,7 +24,7 @@ RUN zcat < install-tl-unx.tar.gz | tar xf - && \
 RUN tlmgr install \
         amscls \
         beamer \
-        beamer-tcolorbox \
+        beamertheme-tcolorbox \
         biblatex \
         bookmark \
         booktabs \
