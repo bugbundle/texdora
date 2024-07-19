@@ -9,7 +9,7 @@ RUN apt-get update -y && apt-get install -y --no-install-recommends \
         fonts-font-awesome \
         fonts-ibm-plex \
         python3 \
-        python3-pip \
+        python3-pygments \
         wget \
         && rm -rf /var/lib/apt/lists/*
 
@@ -80,5 +80,4 @@ RUN tlmgr install \
         xpatch
 
 RUN fmtutil -sys --all \
-    && ln -sf python3 /usr/bin/python \
-    && pip install --user --no-cache-dir Pygments==2.17.2
+    && ln -sf python3 /usr/bin/python
