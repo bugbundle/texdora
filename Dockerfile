@@ -5,8 +5,6 @@ RUN apt-get update -y && apt-get install -y --no-install-recommends \
         git \
         make \
         perl \
-        fonts-font-awesome \
-        fonts-ibm-plex \
         python3 \
         python3-pygments \
         wget \
@@ -60,7 +58,7 @@ RUN tlmgr install \
         pdftexcmds \
         pgf \
         pgfplots \
-        plex \
+        styx2-otf \
         ragged2e \
         roboto \
         setspace \
