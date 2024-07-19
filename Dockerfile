@@ -14,8 +14,8 @@ WORKDIR /tmp
 
 ADD https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz ./install-tl-unx.tar.gz
 
-RUN zcat < install-tl-unx.tar.gz | tar xf - && \
-    perl ./install-tl-*/install-tl --no-interaction --scheme=minimal && \
+RUN tard xzf install-tl-unx.tar.gz && \
+    perl ./install-tl-*/install-tl --no-interaction --scheme=minimal --no-doc-install && \
     rm -rf ./install-tl-*
 
 RUN tlmgr install \
@@ -78,3 +78,5 @@ RUN tlmgr install \
 
 RUN fmtutil -sys --all \
     && ln -sf python3 /usr/bin/python
+
+WORKDIR /texdora
