@@ -1,5 +1,4 @@
-FROM ubuntu:24.04@sha256:562456a05a0dbd62a671c1854868862a4687bf979a96d48ae8e766642cd911e8	
-
+FROM debian:12-slim
 ENV PATH="${PATH}:/root/.local/bin:/usr/local/texlive/2024/bin/x86_64-linux"
 
 RUN apt-get update -y && apt-get install -y --no-install-recommends \
