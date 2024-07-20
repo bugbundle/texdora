@@ -58,7 +58,7 @@ RUN tlmgr install \
         pdftexcmds \
         pgf \
         pgfplots \
-        styx2-otf \
+        stix2-otf \
         ragged2e \
         roboto \
         setspace \
