@@ -1,5 +1,17 @@
 # Changelog
 
+## 4.2.0 (2024-07-20)
+
+## What's Changed
+* build(deps): bump ubuntu from 22.04 to 24.04 by @dependabot in https://github.com/bugbundle/texdora/pull/18
+* build(deps): bump docker/build-push-action from 5.3.0 to 6.4.0 by @dependabot in https://github.com/bugbundle/texdora/pull/28
+* build(deps): bump checkmarx/kics-github-action from 1.7.0 to 2.1.1 by @dependabot in https://github.com/bugbundle/texdora/pull/26
+* build(deps): bump docker/login-action from 3.1.0 to 3.2.0 by @dependabot in https://github.com/bugbundle/texdora/pull/19
+* feat: install beamer and beamer-tcolorbox with tlmgr by @import-benjamin in https://github.com/bugbundle/texdora/pull/27
+
+
+**Full Changelog**: https://github.com/bugbundle/texdora/compare/v4.1.2...v4.2.0
+
 ## 4.1.2 (2024-04-18)
 
 ## What's Changed
