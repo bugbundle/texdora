@@ -1,24 +1,31 @@
+
 FROM debian:12-slim
+ARG TEXLIVE_MIRROR=https://ctan.mines-albi.fr/systems/texlive/tlnet/
 ENV PATH="${PATH}:/root/.local/bin:/usr/local/texlive/2024/bin/x86_64-linux"
 
-RUN apt-get update -y && apt-get install -uy --no-install-recommends \
+RUN <<EOS
+apt-get update -y
+apt-get install -uy --no-install-recommends \
         ca-certificates \
         git \
         make \
         perl \
         python3 \
-        python3-pygments \
-        && rm -rf /var/lib/apt/lists/*
+        python3-pygments
+rm -rf /var/lib/apt/lists/*
+EOS
 
 WORKDIR /tmp
 
-ADD https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz ./install-tl-unx.tar.gz
+ADD ${TEXLIVE_MIRROR}/install-tl-unx.tar.gz ./install-tl-unx.tar.gz
 
-RUN tar xzf install-tl-unx.tar.gz && \
-    perl ./install-tl-*/install-tl --no-interaction --scheme=minimal --no-doc-install --repository=https://mirrors.ircam.fr/pub/CTAN/systems/texlive/tlnet/ && \
-    rm -rf ./install-tl-*
+RUN <<EOS
+tar xzf install-tl-unx.tar.gz
+perl ./install-tl-*/install-tl --no-interaction --scheme=minimal --no-doc-install --repository=${TEXLIVE_MIRROR}
+rm -rf ./install-tl-*
+EOS
 
-RUN tlmgr install --repository=https://mirrors.ircam.fr/pub/CTAN/systems/texlive/tlnet/ \
+RUN tlmgr install --repository=${TEXLIVE_MIRROR} \
         amscls \
         beamer \
         beamertheme-tcolorbox \
