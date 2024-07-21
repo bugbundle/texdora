@@ -8,7 +8,6 @@ RUN apt-get update -y && apt-get install -uy --no-install-recommends \
         perl \
         python3 \
         python3-pygments \
-        && update-ca-certificates \
         && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /tmp
@@ -16,10 +15,10 @@ WORKDIR /tmp
 ADD https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz ./install-tl-unx.tar.gz
 
 RUN tar xzf install-tl-unx.tar.gz && \
-    perl ./install-tl-*/install-tl --no-interaction --scheme=minimal --no-doc-install && \
+    perl ./install-tl-*/install-tl --no-interaction --scheme=minimal --no-doc-install --repository=https://mirrors.ircam.fr/pub/CTAN/systems/texlive/tlnet/ && \
     rm -rf ./install-tl-*
 
-RUN tlmgr install \
+RUN tlmgr install --repository=https://mirrors.ircam.fr/pub/CTAN/systems/texlive/tlnet/ \
         amscls \
         beamer \
         beamertheme-tcolorbox \
