@@ -8,6 +8,7 @@ RUN apt-get update -y && apt-get install -uy --no-install-recommends \
         perl \
         python3 \
         python3-pygments \
+        && update-ca-certificates \
         && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /tmp
@@ -77,7 +78,6 @@ RUN tlmgr install \
         xpatch
 
 RUN fmtutil -sys --all \
-    && update-ca-certificates \
     && ln -sf python3 /usr/bin/python
 
 WORKDIR /texdora
