@@ -1,13 +1,13 @@
 FROM debian:12-slim
 ENV PATH="${PATH}:/root/.local/bin:/usr/local/texlive/2024/bin/x86_64-linux"
 
-RUN apt-get update -y && apt-get install -y --no-install-recommends \
+RUN apt-get update -y && apt-get install -uy --no-install-recommends \
+        ca-certificates \
         git \
         make \
         perl \
         python3 \
         python3-pygments \
-        wget \
         && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /tmp
@@ -77,6 +77,7 @@ RUN tlmgr install \
         xpatch
 
 RUN fmtutil -sys --all \
+    && update-ca-certificates \
     && ln -sf python3 /usr/bin/python
 
 WORKDIR /texdora
