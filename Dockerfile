@@ -21,7 +21,7 @@ ADD ${TEXLIVE_MIRROR}/install-tl-unx.tar.gz ./install-tl-unx.tar.gz
 
 RUN <<EOS
 tar xzf install-tl-unx.tar.gz
-perl ./install-tl-*/install-tl --no-interaction --scheme=minimal --no-doc-install --repository=${TEXLIVE_MIRROR}
+perl ./install-tl-*/install-tl -v --no-interaction --scheme=minimal --no-doc-install --repository=${TEXLIVE_MIRROR}
 rm -rf ./install-tl-*
 EOS
 
