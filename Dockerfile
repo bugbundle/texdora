@@ -12,7 +12,8 @@ apt-get install -uy --no-install-recommends \
         make \
         perl \
         python3 \
-        python3-pygments
+        python3-pygments \
+        fonts-stix2
 rm -rf /var/lib/apt/lists/*
 EOS
 
@@ -66,7 +67,6 @@ RUN tlmgr install --repository=${TEXLIVE_MIRROR} \
         pdftexcmds \
         pgf \
         pgfplots \
-        stix2-otf \
         ragged2e \
         roboto \
         setspace \
