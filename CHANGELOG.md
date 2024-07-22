@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.3.0 (2024-07-22)
+
+**Full Changelog**: https://github.com/bugbundle/texdora/compare/v4.2.0...v4.3.0
+
 ## 4.2.0 (2024-07-20)
 
 ## What's Changed
