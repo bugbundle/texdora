@@ -8,6 +8,7 @@ apt-get update -y
 apt-get install -uy --no-install-recommends \
         ca-certificates \
         git \
+        curl \
         make \
         perl \
         python3 \
