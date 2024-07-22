@@ -1,6 +1,6 @@
 
 FROM debian:12-slim
-ARG TEXLIVE_MIRROR=https://ctan.mines-albi.fr/systems/texlive/tlnet/
+ARG TEXLIVE_MIRROR=https://mirror.mit.edu/CTAN/systems/texlive/tlnet/
 ENV PATH="${PATH}:/root/.local/bin:/usr/local/texlive/2024/bin/x86_64-linux"
 
 RUN <<EOS
