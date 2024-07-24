@@ -12,8 +12,7 @@ apt-get install -uy --no-install-recommends \
         make \
         perl \
         python3 \
-        python3-pygments \
-        fonts-stix2
+        python3-pygments
 rm -rf /var/lib/apt/lists/*
 EOS
 
@@ -37,6 +36,7 @@ RUN tlmgr install --repository=${TEXLIVE_MIRROR} \
         caption \
         carlisle \
         circuitikz \
+        stix2-otf \
         collection-langfrench \
         collection-luatex \
         csquotes \
