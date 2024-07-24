@@ -35,6 +35,26 @@ jobs:
 
 <!-- x-release-please-end -->
 
+## Advanced uses cases
+
+### Use stix2 fonts
+
+In order to use the stix2 fonts provided by ctan, copy the following snippet:
+
+```tex
+\usepackage{unicode-math}
+\setmainfont{STIXTwoText}[
+  /usr/local/texlive/2024/texmf-dist/fonts/opentype/public/stix2-otf/,
+  Extension       = .otf,
+  UprightFont     = *-Regular,
+  ItalicFont      = *-Italic,
+  BoldFont        = *-Bold,
+  BoldItalicFont  = *-BoldItalic ]
+\setmathfont{STIXTwoMath-Regular}[
+  /usr/local/texlive/2024/texmf-dist/fonts/opentype/public/stix2-otf/,
+  Extension       = .otf ]
+```
+
 ## Project status
 
 I'm currently the only maintainer of this docker image, contributions are welcome.
