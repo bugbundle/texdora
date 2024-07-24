@@ -1,7 +1,6 @@
 {
     "commit-search-depth": 200,
     "prerelease": true,
-    "changelog-type": "github",
     "packages": {
         ".": {
             "release-type": "simple",
