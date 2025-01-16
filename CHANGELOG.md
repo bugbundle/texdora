@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.4.0](https://github.com/bugbundle/texdora/compare/v4.3.0...v4.4.0) (2025-01-16)
+
+
+### Features
+
+* add sourcecodepro package by default ([1d7cd98](https://github.com/bugbundle/texdora/commit/1d7cd9857de9f2b10c2b642f42dceb24f0cf7377))
+
 ## 4.3.0 (2024-07-22)
 
 **Full Changelog**: https://github.com/bugbundle/texdora/compare/v4.2.0...v4.3.0
