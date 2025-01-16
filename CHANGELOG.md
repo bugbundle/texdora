@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.5.0](https://github.com/bugbundle/texdora/compare/v4.4.0...v4.5.0) (2025-01-16)
+
+
+### Features
+
+* add lineno package by default ([4133f49](https://github.com/bugbundle/texdora/commit/4133f49cc59e1e73eeff5947af97c9d55e12a00a))
+
 ## [4.4.0](https://github.com/bugbundle/texdora/compare/v4.3.0...v4.4.0) (2025-01-16)
 
 
