@@ -1,5 +1,5 @@
-
 FROM debian:12-slim
+LABEL org.opencontainers.image.description="Your texlab environment in a docker container."
 ARG TEXLIVE_MIRROR=https://mirrors.mit.edu/CTAN/systems/texlive/tlnet/
 ENV PATH="${PATH}:/root/.local/bin:/usr/local/texlive/2024/bin/x86_64-linux"
 
@@ -72,6 +72,7 @@ RUN tlmgr install --repository=${TEXLIVE_MIRROR} \
         setspace \
         siunitx \
         sourcesanspro \
+        sourcecodepro \
         subfiles \
         tcolorbox \
         thmtools \
