@@ -22,7 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Run KICS Scan with SARIF result
-        uses: checkmarx/kics-github-action@v2.1.4
+        uses: checkmarx/kics-github-action@v2.1.7
         with:
           path: 'Dockerfile'
           platform_type: Dockerfile
