@@ -1,29 +1,22 @@
-FROM debian:12-slim
+FROM docker.io/redhat/ubi9-minimal:9.5-1745855087
 ARG TEXLIVE_MIRROR=https://mirrors.mit.edu/CTAN/systems/texlive/tlnet/
-ENV PATH="${PATH}:/root/.local/bin:/usr/local/texlive/2024/bin/x86_64-linux"
+ENV PATH="${PATH}:/root/.local/bin:/usr/local/texlive/2025/bin/x86_64-linux"
 
-RUN <<EOS
-apt-get update -y
-apt-get install -uy --no-install-recommends \
+RUN microdnf update -y \
+  && microdnf install -y \
         ca-certificates \
         git \
-        curl \
+        tar \
         make \
-        perl \
+        perl-interpreter \
         python3 \
-        python3-pygments
-rm -rf /var/lib/apt/lists/*
-EOS
+        python3-pygments \
+  && microdnf clean all
 
 WORKDIR /tmp
 
-ADD ${TEXLIVE_MIRROR}/install-tl-unx.tar.gz ./install-tl-unx.tar.gz
-
-RUN <<EOS
-tar xzf install-tl-unx.tar.gz
-perl ./install-tl-*/install-tl -v --no-interaction --scheme=minimal --no-doc-install --repository=${TEXLIVE_MIRROR}
-rm -rf ./install-tl-*
-EOS
+RUN curl -L ${TEXLIVE_MIRROR}/install-tl-unx.tar.gz | tar xz
+RUN perl ./install-tl-*/install-tl -v --no-interaction --scheme=minimal --no-doc-install --repository=${TEXLIVE_MIRROR} && rm -rf ./install-tl-*
 
 RUN tlmgr install --repository=${TEXLIVE_MIRROR} \
         amscls \
