@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.6.0](https://github.com/bugbundle/texdora/compare/v4.5.0...v4.6.0) (2025-05-08)
+
+
+### Features
+
+* migrate to ubi9-minimal as base image ([#54](https://github.com/bugbundle/texdora/issues/54)) ([872ac95](https://github.com/bugbundle/texdora/commit/872ac95aef041521e5a76b90f5cefea21159669d))
+
 ## [4.5.0](https://github.com/bugbundle/texdora/compare/v4.4.0...v4.5.0) (2025-01-16)
 
 
