@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.6.1](https://github.com/bugbundle/texdora/compare/v4.6.0...v4.6.1) (2025-05-14)
+
+
+### Bug Fixes
+
+* add xstring dependency ([#56](https://github.com/bugbundle/texdora/issues/56)) ([17d4767](https://github.com/bugbundle/texdora/commit/17d476775804e8b0fc8fd3f032dc8403f2f14153))
+
 ## [4.6.0](https://github.com/bugbundle/texdora/compare/v4.5.0...v4.6.0) (2025-05-08)
 
 
