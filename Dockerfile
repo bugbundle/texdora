@@ -76,7 +76,8 @@ RUN tlmgr install --repository=${TEXLIVE_MIRROR} \
         upquote \
         xifthen \
         xkeyval \
-        xpatch
+        xpatch  \
+        xstring
 
 RUN fmtutil -sys --all \
     && ln -sf python3 /usr/bin/python
