@@ -13,7 +13,7 @@ jobs:
   compile:
     runs-on: ubuntu-latest
     steps:
-      - uses: bugbundle/texdora@v4.6.0
+      - uses: bugbundle/texdora@v4.6.1
 ```
 
 An alternative would be to use it directly as a docker image:
@@ -22,7 +22,7 @@ An alternative would be to use it directly as a docker image:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: docker://ghcr.io/bugbundle/texdora@v4.6.0
+    container: docker://ghcr.io/bugbundle/texdora@v4.6.1
     steps:
     - uses: actions/checkout@v4
     - run: make papers.pdf
