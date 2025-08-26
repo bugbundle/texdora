@@ -1,4 +1,4 @@
-FROM docker.io/redhat/ubi9-minimal:9.6-1754584681
+FROM docker.io/redhat/ubi9-minimal:9.6-1755695350
 ARG TEXLIVE_MIRROR=https://mirrors.mit.edu/CTAN/systems/texlive/tlnet/
 ENV PATH="${PATH}:/root/.local/bin:/usr/local/texlive/2025/bin/x86_64-linux"
 
